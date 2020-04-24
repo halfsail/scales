@@ -1,0 +1,56 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scale</title>
+    <link rel="stylesheet" href="app.css">
+</head>
+<body>
+    <section class="left">
+        <p class="sectionLabel">Font</p>    
+        <div class="controlWrapper">
+            <label>Type amount</label>
+            <input id="amount" type="number" placeholder="5" onkeyup="setType()"/>
+            <p class="helpText">Amount of font sizes.</p>
+        </div>
+        <div class="controlWrapper">
+            <label>Base size</label>
+            <input id="size" type="number" placeholder="0.9" onkeyup="setType()"/>
+            <p class="helpText">Smallest size of the font in the scale.</p>
+        </div>
+        <div class="controlWrapper">
+            <label>Step amount</label>
+            <input id="increment" type="number" step=".1" placeholder="1.3" onkeyup="setType()"/>
+            <p class="helpText">Increment of each font size step.</p>
+        </div>
+        <div class="controlWrapper">
+            <label>Font family</label>
+            <input id="font" type="text" placeholder="system-ui" onkeyup="setType()"/>
+            <p class="helpText">Type any font in your computer.</p>
+        </div>
+        <br>
+        <p class="sectionLabel">Leading</p>
+        <div class="controlWrapper">
+            <label>Relative amount</label>
+            <input id="height" type="number" step=".1" placeholder="1" onkeyup="setType()"/>
+            <p class="helpText">Value to control how drastic the line height change.</p>
+        </div>
+        <div class="controlWrapper">
+            <label>Step amount</label>
+            <input id="heightAmount" type="number" step=".05" placeholder=".25" onkeyup="setType()"/>
+            <p class="helpText">Increment of each line height step.</p>
+        </div>
+        <p class="cited">by <a href="https://feyder.design">feyder</a></p>
+    </section>
+    <section class="right" id="right">
+        <template>
+            <p class="fontInfomation"></p>
+            <p>
+                A pattern produced by the bug's shaking would be a series of concentric circles. 
+                These circles would reach the edges of the water puddle at the same frequency.
+            </p>
+          </template>
+    </section>
+    <script src="logic.js"></script>
+</body>
+</html>
